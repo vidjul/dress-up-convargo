@@ -42,13 +42,34 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1 class="display-2">Find</h1>
+        <h1 class="display-3">Find the information you want!</h1>
       </div>
     </div>
     <div class="row">
       <div class="col">
         <p>Thanks to this page, you can compute the credit and debit for each different actors of a transaction. Please fill
           in the form below:</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10">
+        <div class="alert alert-info" role="alert">
+          <h1>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            Send more, pay less.
+          </h1>
+          <p>
+            We apply some reductions to the shipping price according to the loads you send.
+            <br />
+            The price per m<sup>3</sup> decreases according to the following rules:
+            <ol>
+              <li>decreases by <b>10% after 5 m<sup>3</sup></b></li>
+              <li>decreases by <b>30% after 10 m<sup>3</sup></b></li>
+              <li>decreases by <b>50% after 25 m<sup>3</sup></b></li>
+            </ol>
+            Happy shipping!
+          </p>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -126,23 +147,24 @@
         <div id="actors"></div>
       </div>
     </div>
+  </div>
 
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-      $('.carousel').carousel({
-        interval: 3000
-      });
-    </script>
+  <script src="convargo.js"></script>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    $('.carousel').carousel({
+      interval: 3000
+    });
+  </script>
 </body>
 
 </html>
