@@ -114,8 +114,12 @@
       </div>
       <div class="col-3">
         <h1 class="display-4">Options</h1>
-        <input class="option" type="checkbox" placeholder="Deductible option" />
-        <button id="compute">Compute</button>
+        <div class="form-check">
+          <input id="checkBox" class="option form-check-label" type="checkbox" placeholder="Deductible option" />
+          <label class="form-check-label" for="checkBox">Deductible option</label>
+          <i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" data-html="true" title="In case of an accident/theft, convargo applies a 1000€ deductible. <br /> For a few more euros, you can reduce this amount from 1000€ to 200€ !"></i>
+          <button id="compute" class="btn btn-primary mb-2">Compute</button>
+        </div>
       </div>
       <div class="col-3">
         <h1 class="display-4">Results</h1>
@@ -131,6 +135,14 @@
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      $('.carousel').carousel({
+        interval: 3000
+      });
+    </script>
 </body>
 
 </html>
